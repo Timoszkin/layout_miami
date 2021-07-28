@@ -11,7 +11,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body class="page page__body">
-    <header class="header page__section">
+    <header class="header page__section" id="page-top">
       <div class="container">
         <div class="header__content">
           <div class="top-actions">
@@ -19,7 +19,7 @@
               href="#menu"
               class="icon icon--menu">
             </a>
-            <a href="/" class="logo">
+            <a href="#home" class="logo">
               <img 
                 src="../src/images/logo.png"
                 alt="Miami Condo Kings"
@@ -349,14 +349,16 @@
               </div>
             </div>
             <div class="grid__item grid__item--8-12">
-              <form action="/" method="GET">
+              <form action="" method="GET">
                 <input
+                  required
                   name="name"
                   type="text"
                   placeholder="Name"
                   class="contact-us__field form-field"
                 >
                 <input
+                  required
                   name="email"
                   type="email"
                   placeholder="Email"
@@ -364,6 +366,7 @@
                   class="contact-us__field form-field"
                 >
                 <textarea
+                  required
                   name="message"
                   id="//"
                   placeholder="Message"
@@ -375,7 +378,11 @@
                   form-field
                   form-field--textarea"
                 ></textarea>
-                <button class="button button--primary">
+                <button 
+                  type="submit"
+                  value="Submit"
+                  class="button button--primary"
+                >
                   Consultation
                 </button>
               </form>
@@ -386,7 +393,7 @@
     </main>
 
     <footer class="footer">
-      <a href="/" class="logo">
+      <a href="#page-top" class="logo">
         <img 
           src="../src/images/logo.png"
           alt="Miami Condo Kings"
